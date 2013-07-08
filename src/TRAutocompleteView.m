@@ -107,10 +107,6 @@
 - (void)loadDefaults
 {
     self.backgroundColor = [UIColor whiteColor];
-
-    self.separatorColor = [UIColor lightGrayColor];
-    self.separatorStyle = UITableViewCellSeparatorStyleNone;
-
     self.topMargin = 0;
 }
 
