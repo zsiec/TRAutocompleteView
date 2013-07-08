@@ -42,6 +42,7 @@
 
 @property(nonatomic) UIColor *separatorColor;
 @property(nonatomic) UITableViewCellSeparatorStyle separatorStyle;
+@property(nonatomic, strong) UITableView *table;
 
 @property(nonatomic) CGFloat topMargin;
 

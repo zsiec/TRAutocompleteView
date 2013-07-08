@@ -45,7 +45,6 @@
     __weak UITextField *_queryTextField;
     __weak UIViewController *_contextController;
 
-    UITableView *_table;
     id <TRAutocompleteItemsSource> _itemsSource;
     id <TRAutocompletionCellFactory> _cellFactory;
 }
