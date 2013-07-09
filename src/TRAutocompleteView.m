@@ -112,7 +112,12 @@
 
 - (void)keyboardWasShown:(NSNotification *)notification
 {
-    NSDictionary *info = [notification userInfo];
+    [NSTimer scheduledTimerWithTimeInterval:.30 target:self selector:@selector(setupAutocomplete:) userInfo:notification repeats:NO];
+}
+
+- (void)setupAutocomplete:(NSNotification *)notification
+{
+    NSDictionary *info = [(NSNotification *)[notification userInfo] userInfo];
     CGSize kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
 
     CGFloat contextViewHeight = 0;
