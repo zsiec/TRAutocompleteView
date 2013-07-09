@@ -35,7 +35,7 @@
 
 @implementation TRGoogleMapsAutocompletionCell
 
-- (void)updateWith:(id <TRSuggestionItem>)item
+- (void)updateWith:(id <TRSuggestionItem>)item withQuery:(NSString *)query
 {
     self.textLabel.text = item.completionText;
 }

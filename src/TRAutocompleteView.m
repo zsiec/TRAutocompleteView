@@ -204,7 +204,7 @@
     NSAssert([suggestion conformsToProtocol:@protocol(TRSuggestionItem)], @"Suggestion item must conform TRSuggestionItem");
     id <TRSuggestionItem> suggestionItem = (id <TRSuggestionItem>) suggestion;
 
-    [completionCell updateWith:suggestionItem];
+    [completionCell updateWith:suggestionItem withQuery:_queryTextField.text];
 
     return cell;
 }

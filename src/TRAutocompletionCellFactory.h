@@ -33,7 +33,7 @@
 
 @protocol TRAutocompletionCell <NSObject>
 
-- (void)updateWith:(id <TRSuggestionItem>)item;
+- (void)updateWith:(id <TRSuggestionItem>)item withQuery:(NSString *)query;
 
 @end
 
