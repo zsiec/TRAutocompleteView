@@ -91,8 +91,8 @@
                                     object:_queryTextField];
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(keyboardWasShown:)
-                                                     name:UIKeyboardDidShowNotification
-                                                   object:nil];
+                                                     name:UITextFieldTextDidBeginEditingNotification
+                                                   object:_queryTextField];
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(keyboardWillHide:)
                                                      name:UIKeyboardWillHideNotification
