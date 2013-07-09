@@ -52,4 +52,6 @@
                                      cellFactory:(id <TRAutocompletionCellFactory>)factory
                                     presentingIn:(UIViewController *)controller;
 
+- (void)keyboardWasShown:(NSNotification *)notification;
+
 @end
